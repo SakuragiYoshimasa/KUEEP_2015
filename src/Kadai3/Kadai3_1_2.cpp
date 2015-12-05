@@ -33,8 +33,13 @@ void Kadai3_1_2::update(){
     mesh.clear();
     for(int i = 0; i < p->N; i++){
         mesh.addVertex(ofPoint(i * 4.0,-p->uk.at(i) * 200.0));
+        if(p->frameCounter == 100){
+            saveData.push_back(ofPoint(i,p->uk.at(i)));
+        }
     }
+    if(p->frameCounter == 100) csvOperator::saveSplinePoints("3_1_2out", saveData);
     p->update();
+    
 }
 
 

@@ -11,7 +11,7 @@ int main( ){
 	// can be OF_WINDOW or OF_FULLSCREEN
 	// pass in width and height too:
 	//ofRunApp(new ofApp());
-    //ofRunApp(new Kadai3_1_2());
+    ofRunApp(new Kadai3_1_2());
     //ofRunApp(new Kadai3_2());
-    ofRunApp(new Kadai3_3());
+    //ofRunApp(new Kadai3_3());
 }
