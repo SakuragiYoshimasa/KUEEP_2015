@@ -50,5 +50,4 @@ void LorenzAttractor::reset(){
 vector<double> LorenzAttractor::calcNextY(vector<double> k1,vector<double> k2,vector<double> k3,vector<double> k4){
     vector<double> diff = ampVec(plusVec(plusVec(k1, ampVec(k2, 2.0)),plusVec(ampVec(k3, 2.0),k4)), deltaT/6.0);
     return plusVec(y, diff);
-  //  y = y + (k1 +  +  + k4) * (deltaT / 6.0);
 };

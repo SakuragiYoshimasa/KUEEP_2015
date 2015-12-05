@@ -10,28 +10,9 @@
 #define LorenzAttractor_h
 #include "Includer.h"
 
-/*namespace Lorenz {
-    vector<double>* operator * (vector<double> v0, double amp){
-        vector<double> * v = new vector<double>(3);
-        for(int i = 0; i < 3; i++){
-            v->at(i) = v0[i] * amp;
-        }
-        return v;
-    }
-    vector<double> operator + (vector<double> v0, vector<double> v1){
-        vector<double> v = *new vector<double>(3);
-        v[0] = v0[0] + v1[0];
-        v[1] = v0[1] + v1[1];
-        v[2] = v0[2] + v1[2];
-        return v;
-    }
-}*/
-
 #define L_RO 10.0
 #define L_B 8.0/3.0
 #define L_R 28.0
-
-//using namespace Lorenz;
 
 class LorenzAttractor {
 public:

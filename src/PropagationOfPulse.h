@@ -25,6 +25,7 @@ public:
     double deltaX;
     double Td; //パルスの時間幅
     double myu;
+    bool free = false;
     string fileName;
     
     //---------------------------

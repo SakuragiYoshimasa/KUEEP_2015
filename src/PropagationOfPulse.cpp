@@ -39,16 +39,18 @@ void PropagationOfPulse::update(){
     }
     frameCounter+=1;
     if(frameCounter == 1) return;
-    //------------------------
-    // i = N - 1 固定端
-    //------------------------
-    uk.at(N-1) = - ukMinusTwoStep.at(N-1) + myu * ukMinusOneStep.at(N-2) + 2.0 * (1.0 - myu) * ukMinusOneStep.at(N-1);
-    
-    //------------------------
-    // i = N - 1 自由端
-    //------------------------
-    //uk.at(N-1) = - ukMinusTwoStep.at(N-1) + myu * ukMinusOneStep.at(N-2) + (2.0 - myu) * ukMinusOneStep.at(N-1);
-    
+    if(free){
+        //------------------------
+        // i = N - 1 自由端
+        //------------------------
+        uk.at(N-1) = - ukMinusTwoStep.at(N-1) + myu * ukMinusOneStep.at(N-2) + (2.0 - myu) * ukMinusOneStep.at(N-1);
+
+    }else{
+        //------------------------
+        // i = N - 1 固定端
+        //------------------------
+        uk.at(N-1) = - ukMinusTwoStep.at(N-1) + myu * ukMinusOneStep.at(N-2) + 2.0 * (1.0 - myu) * ukMinusOneStep.at(N-1);
+    }
     
     //------------------------
     //1 ~ N -2
