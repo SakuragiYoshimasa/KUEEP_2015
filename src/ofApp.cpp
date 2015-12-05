@@ -1,6 +1,7 @@
 #include "ofApp.h"
 #include "HeunMethod.h"
 #include "FourRungeKuttaMethod.h"
+#include "LorenzAttractor.h"
 //-----------------------------------
 //Draw pulse 3.1
 //----------------------------------
@@ -28,21 +29,28 @@ ofMesh evPoints;
 //---------------------------
 vector<ofPoint> saveData;
 
+//---------------------------
+//Kadai3.3
+//---------------------------
+LorenzAttractor * lorenz;
+ofMesh y1Points;
+ofMesh y1y2Points;
+
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(255);
     //-----------------------------------
     //Set Pulse 3.1
     //----------------------------------
-    p = new PropagationOfPulse(true);
+    /*p = new PropagationOfPulse(true);
     mesh.setMode(OF_PRIMITIVE_LINE_STRIP);
-    
+    */
     //-----------------------------------
     //kadai3.2
     //----------------------------------
     //method = new EulersMethod();
     //method = new HeunMethod();
-    method = new FourRungeKuttaMethod();
+    /*method = new FourRungeKuttaMethod();
    
     uvtMesh.clear();
     while (method->time < 10 * M_PI / OMEGA) {
@@ -71,11 +79,11 @@ void ofApp::setup(){
     gosaU.setMode(OF_PRIMITIVE_POINTS);
     gosaV.setMode(OF_PRIMITIVE_POINTS);
     method->reset();
-    
+    */
     //-----------------------------------
     //kadai3.2.2
     //----------------------------------
-    euPoints.setMode(OF_PRIMITIVE_POINTS);
+    /*euPoints.setMode(OF_PRIMITIVE_POINTS);
     evPoints.setMode(OF_PRIMITIVE_POINTS);
     for(int p = 3; p <= 18; p++){
         double deltaT = 2* M_PI/ (pow(2.0, p) * OMEGA);
@@ -96,6 +104,21 @@ void ofApp::setup(){
     }
     double deltaT = 2* M_PI/ (64 * OMEGA);
     method->deltaT = deltaT;
+    */
+    
+    //-----------------------------------
+    //kadai3.3
+    //----------------------------------
+    /*lorenz = new LorenzAttractor();
+    y1Points.setMode(OF_PRIMITIVE_POINTS);
+    y1y2Points.setMode(OF_PRIMITIVE_POINTS);
+    lorenz->y.at(0) = 1 + 1.0 / 1000;
+    while (lorenz->time <= 100) {
+        
+        y1Points.addVertex(ofPoint(lorenz->time * 100.0, lorenz->y[0] * 10.0,0));
+        y1y2Points.addVertex(ofPoint(lorenz->y.at(0) * 10.0,lorenz->y.at(1) * 10.0));
+        lorenz->update();
+    }*/
 }
 
 //--------------------------------------------------------------
@@ -112,13 +135,13 @@ void ofApp::update(){
     //-----------------------------------
     //kadai3.2
     //----------------------------------
-    method->update(); //Test
+    //method->update(); //Test
 }
 
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofCircle(ofGetWidth()/2, method->u * 100 + ofGetHeight()/2.0, 10); //Test
+    //ofCircle(ofGetWidth()/2, method->u * 100 + ofGetHeight()/2.0, 10); //Test
     //-----------------------------------
     //Draw pulse 3.1
     //----------------------------------
@@ -148,14 +171,25 @@ void ofApp::draw(){
     //-----------------------------------
     //kadai3.2.2
     //----------------------------------
-    ofPushMatrix();
+    /*ofPushMatrix();
     glPointSize(5);
     ofTranslate(0, ofGetHeight()/2);
     ofSetColor(0, 255, 255);
     euPoints.draw();
     ofSetColor(255, 0, 255);
     evPoints.draw();
-    ofPopMatrix();
+    ofPopMatrix();*/
+
+    //-----------------------------------
+    //kadai3.3
+    //----------------------------------
+    /*ofPushMatrix();
+    ofTranslate(0, ofGetHeight()/2);
+    ofSetColor(0);
+    y1Points.draw();
+    ofTranslate(ofGetWidth()/2, 0);
+    y1y2Points.draw();
+    ofPopMatrix();*/
 }
 
 //--------------------------------------------------------------

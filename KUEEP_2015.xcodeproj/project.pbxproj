@@ -27,6 +27,7 @@
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
 		FA4723951C129A0300C740AE /* csvOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4723931C129A0300C740AE /* csvOperator.cpp */; };
+		FA47239B1C12A34A00C740AE /* LorenzAttractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4723991C12A34A00C740AE /* LorenzAttractor.cpp */; };
 		FA5401541C11D52500B34A66 /* HeunMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5401521C11D52500B34A66 /* HeunMethod.cpp */; };
 		FA54015B1C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5401591C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp */; };
 		FA9F712D1C109476008F1560 /* EulersMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9F712B1C109476008F1560 /* EulersMethod.cpp */; };
@@ -89,6 +90,8 @@
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		FA4723931C129A0300C740AE /* csvOperator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csvOperator.cpp; sourceTree = "<group>"; };
 		FA4723941C129A0300C740AE /* csvOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csvOperator.h; sourceTree = "<group>"; };
+		FA4723991C12A34A00C740AE /* LorenzAttractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LorenzAttractor.cpp; sourceTree = "<group>"; };
+		FA47239A1C12A34A00C740AE /* LorenzAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LorenzAttractor.h; sourceTree = "<group>"; };
 		FA5401521C11D52500B34A66 /* HeunMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeunMethod.cpp; sourceTree = "<group>"; };
 		FA5401531C11D52500B34A66 /* HeunMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeunMethod.h; sourceTree = "<group>"; };
 		FA5401591C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourRungeKuttaMethod.cpp; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				FA4723991C12A34A00C740AE /* LorenzAttractor.cpp */,
+				FA47239A1C12A34A00C740AE /* LorenzAttractor.h */,
 				FA4723931C129A0300C740AE /* csvOperator.cpp */,
 				FA4723941C129A0300C740AE /* csvOperator.h */,
 				FA5401591C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp */,
@@ -312,6 +317,7 @@
 			files = (
 				FA54015B1C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp in Sources */,
 				FABF31DA1C101EFA009F0BC1 /* PropagationOfPulse.cpp in Sources */,
+				FA47239B1C12A34A00C740AE /* LorenzAttractor.cpp in Sources */,
 				FA5401541C11D52500B34A66 /* HeunMethod.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				FA9F712D1C109476008F1560 /* EulersMethod.cpp in Sources */,
