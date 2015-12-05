@@ -88,21 +88,21 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		FA30465A1C12C90B00240587 /* Kadai3_1_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kadai3_1_2.cpp; sourceTree = "<group>"; };
-		FA30465B1C12C90B00240587 /* Kadai3_1_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kadai3_1_2.h; sourceTree = "<group>"; };
-		FA4723931C129A0300C740AE /* csvOperator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csvOperator.cpp; sourceTree = "<group>"; };
-		FA4723941C129A0300C740AE /* csvOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csvOperator.h; sourceTree = "<group>"; };
-		FA4723991C12A34A00C740AE /* LorenzAttractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LorenzAttractor.cpp; sourceTree = "<group>"; };
-		FA47239A1C12A34A00C740AE /* LorenzAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LorenzAttractor.h; sourceTree = "<group>"; };
-		FA5401521C11D52500B34A66 /* HeunMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeunMethod.cpp; sourceTree = "<group>"; };
-		FA5401531C11D52500B34A66 /* HeunMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeunMethod.h; sourceTree = "<group>"; };
-		FA5401591C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourRungeKuttaMethod.cpp; sourceTree = "<group>"; };
-		FA54015A1C11DBAB00B34A66 /* FourRungeKuttaMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourRungeKuttaMethod.h; sourceTree = "<group>"; };
-		FA9F712B1C109476008F1560 /* EulersMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EulersMethod.cpp; sourceTree = "<group>"; };
-		FA9F712C1C109476008F1560 /* EulersMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EulersMethod.h; sourceTree = "<group>"; };
-		FABF31D81C101EFA009F0BC1 /* PropagationOfPulse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropagationOfPulse.cpp; sourceTree = "<group>"; };
-		FABF31D91C101EFA009F0BC1 /* PropagationOfPulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropagationOfPulse.h; sourceTree = "<group>"; };
-		FABF31DB1C101F0E009F0BC1 /* Includer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Includer.h; sourceTree = "<group>"; };
+		FA30465A1C12C90B00240587 /* Kadai3_1_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Kadai3_1_2.cpp; path = src/Kadai3_1_2.cpp; sourceTree = SOURCE_ROOT; };
+		FA30465B1C12C90B00240587 /* Kadai3_1_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kadai3_1_2.h; path = src/Kadai3_1_2.h; sourceTree = SOURCE_ROOT; };
+		FA4723931C129A0300C740AE /* csvOperator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = csvOperator.cpp; path = ../csvOperator.cpp; sourceTree = "<group>"; };
+		FA4723941C129A0300C740AE /* csvOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = csvOperator.h; path = ../csvOperator.h; sourceTree = "<group>"; };
+		FA4723991C12A34A00C740AE /* LorenzAttractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LorenzAttractor.cpp; path = ../LorenzAttractor.cpp; sourceTree = "<group>"; };
+		FA47239A1C12A34A00C740AE /* LorenzAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LorenzAttractor.h; path = ../LorenzAttractor.h; sourceTree = "<group>"; };
+		FA5401521C11D52500B34A66 /* HeunMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeunMethod.cpp; path = ../HeunMethod.cpp; sourceTree = "<group>"; };
+		FA5401531C11D52500B34A66 /* HeunMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeunMethod.h; path = ../HeunMethod.h; sourceTree = "<group>"; };
+		FA5401591C11DBAB00B34A66 /* FourRungeKuttaMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FourRungeKuttaMethod.cpp; path = ../FourRungeKuttaMethod.cpp; sourceTree = "<group>"; };
+		FA54015A1C11DBAB00B34A66 /* FourRungeKuttaMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourRungeKuttaMethod.h; path = ../FourRungeKuttaMethod.h; sourceTree = "<group>"; };
+		FA9F712B1C109476008F1560 /* EulersMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EulersMethod.cpp; path = ../EulersMethod.cpp; sourceTree = "<group>"; };
+		FA9F712C1C109476008F1560 /* EulersMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EulersMethod.h; path = ../EulersMethod.h; sourceTree = "<group>"; };
+		FABF31D81C101EFA009F0BC1 /* PropagationOfPulse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PropagationOfPulse.cpp; path = ../PropagationOfPulse.cpp; sourceTree = "<group>"; };
+		FABF31D91C101EFA009F0BC1 /* PropagationOfPulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropagationOfPulse.h; path = ../PropagationOfPulse.h; sourceTree = "<group>"; };
+		FABF31DB1C101F0E009F0BC1 /* Includer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Includer.h; path = ../Includer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +201,28 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				FA30465E1C12CCEE00240587 /* Kadai3 */,
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		FA30465E1C12CCEE00240587 /* Kadai3 */ = {
+			isa = PBXGroup;
+			children = (
+				FA30465A1C12C90B00240587 /* Kadai3_1_2.cpp */,
+				FA30465B1C12C90B00240587 /* Kadai3_1_2.h */,
 				FA4723991C12A34A00C740AE /* LorenzAttractor.cpp */,
 				FA47239A1C12A34A00C740AE /* LorenzAttractor.h */,
 				FA4723931C129A0300C740AE /* csvOperator.cpp */,
@@ -214,22 +236,8 @@
 				FABF31DB1C101F0E009F0BC1 /* Includer.h */,
 				FABF31D81C101EFA009F0BC1 /* PropagationOfPulse.cpp */,
 				FABF31D91C101EFA009F0BC1 /* PropagationOfPulse.h */,
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				FA30465A1C12C90B00240587 /* Kadai3_1_2.cpp */,
-				FA30465B1C12C90B00240587 /* Kadai3_1_2.h */,
 			);
-			path = src;
-			sourceTree = SOURCE_ROOT;
-		};
-		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
-				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
-			);
-			name = openFrameworks;
+			path = Kadai3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
