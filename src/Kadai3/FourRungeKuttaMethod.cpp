@@ -8,6 +8,10 @@
 
 #include "FourRungeKuttaMethod.h"
 
+FourRungeKuttaMethod::FourRungeKuttaMethod(){
+    
+}
+
 //--------------------------------------
 //Yn+1 = Yn + h/6(k1 + 2*k2 + 2*k3 + k4)
 //今回は微分にtがないのでfは実際tに関係なし

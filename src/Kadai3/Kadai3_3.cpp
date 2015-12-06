@@ -19,9 +19,10 @@ void Kadai3_3::setup(){
     y1Points.setMode(OF_PRIMITIVE_POINTS);
     y1y2Points.setMode(OF_PRIMITIVE_POINTS);
     //lorenz->y.at(0) = 1 + 1.0 / 100;
-    while (lorenz->time <= 10) {
+    while (lorenz->time <= 100) {
         y1Points.addVertex(ofPoint(lorenz->time * 70.0, -lorenz->y[0] * 20.0,0));
         y1y2Points.addVertex(ofPoint(lorenz->y.at(0) * 15.0,-lorenz->y.at(1) * 15.0));
+        y1y2Points.addColor(ofColor::fromHsb(int(lorenz->time) % 255, 255, 255));
         lorenz->update();
     }
 }

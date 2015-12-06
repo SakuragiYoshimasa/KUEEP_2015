@@ -30,8 +30,9 @@
 		FA30466D1C12CDBC00240587 /* HeunMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046631C12CDBC00240587 /* HeunMethod.cpp */; };
 		FA30466F1C12CDBC00240587 /* LorenzAttractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046671C12CDBC00240587 /* LorenzAttractor.cpp */; };
 		FA3046701C12CDBC00240587 /* PropagationOfPulse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046691C12CDBC00240587 /* PropagationOfPulse.cpp */; };
-		FA3046771C13016800240587 /* Kadai3_1_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046651C12CDBC00240587 /* Kadai3_1_2.cpp */; };
 		FA4723951C129A0300C740AE /* csvOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4723931C129A0300C740AE /* csvOperator.cpp */; };
+		FA9176B61C1411F900A81708 /* Kadai3_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046711C12D8FD00240587 /* Kadai3_2.cpp */; };
+		FA9176B81C14168500A81708 /* UV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9176B71C14168500A81708 /* UV.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		FA3046751C12F8DB00240587 /* Kadai3_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kadai3_3.h; sourceTree = "<group>"; };
 		FA4723931C129A0300C740AE /* csvOperator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csvOperator.cpp; sourceTree = "<group>"; };
 		FA4723941C129A0300C740AE /* csvOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csvOperator.h; sourceTree = "<group>"; };
+		FA9176B71C14168500A81708 /* UV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UV.cpp; sourceTree = "<group>"; };
 		FABF31DB1C101F0E009F0BC1 /* Includer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Includer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +246,7 @@
 				FA3046721C12D8FD00240587 /* Kadai3_2.h */,
 				FA3046741C12F8DB00240587 /* Kadai3_3.cpp */,
 				FA3046751C12F8DB00240587 /* Kadai3_3.h */,
+				FA9176B71C14168500A81708 /* UV.cpp */,
 			);
 			path = Kadai3;
 			sourceTree = "<group>";
@@ -335,9 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3046771C13016800240587 /* Kadai3_1_2.cpp in Sources */,
+				FA9176B61C1411F900A81708 /* Kadai3_2.cpp in Sources */,
 				FA30466F1C12CDBC00240587 /* LorenzAttractor.cpp in Sources */,
 				FA30466C1C12CDBC00240587 /* FourRungeKuttaMethod.cpp in Sources */,
+				FA9176B81C14168500A81708 /* UV.cpp in Sources */,
 				FA30466B1C12CDBC00240587 /* EulersMethod.cpp in Sources */,
 				FA30466D1C12CDBC00240587 /* HeunMethod.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,

@@ -15,8 +15,8 @@
 //kadai3.2.1
 //----------------------------------
 //EulersMethod * method;
-//HeunMethod * method;
-FourRungeKuttaMethod * method;
+HeunMethod * method;
+//FourRungeKuttaMethod * method;
 ofMesh uvtMesh;
 ofMesh gosaU;
 ofMesh gosaV;
@@ -38,27 +38,30 @@ vector<ofPoint> saveData;
 void Kadai3_2::setup(){
     ofBackground(255);
     //method = new EulersMethod();
-    //method = new HeunMethod();
-    method = new FourRungeKuttaMethod();
+    method = new HeunMethod();
+    //method = new FourRungeKuttaMethod();
     //-----------------------------------
     //kadai3.2
     //----------------------------------
     
-    /*uvtMesh.clear();
+    uvtMesh.clear();
     while (method->time < 10 * M_PI / OMEGA) {
         method->update();
-        uvtMesh.addVertex(ofPoint(-method->u * 100,-method->v * 100));
+        //uvtMesh.addVertex(ofPoint(-method->u * 100,-method->v * 100));
+        uvtMesh.addVertex(ofPoint(-method->uv.u * 100,-method->uv.v * 100));
         //--------
         //Euler
         //--------
-        gosaU.addVertex(ofPoint(method->time * 15.0, (method->u - method->SolutionU(method->time))* 100));
-        gosaV.addVertex(ofPoint(method->time * 15.0, (method->v - method->SolutionV(method->time))* 100));
+        //gosaU.addVertex(ofPoint(method->time * 15.0, (method->u - method->SolutionU(method->time))* 100));
+        //gosaV.addVertex(ofPoint(method->time * 15.0, (method->v - method->SolutionV(method->time))* 100));
         
         //--------
         //Heun
         //--------
         //gosaU.addVertex(ofPoint(method->time * 15.0, (method->u - method->SolutionU(method->time))* 10000));
         //gosaV.addVertex(ofPoint(method->time * 15.0, (method->v - method->SolutionV(method->time))* 10000));
+        gosaU.addVertex(ofPoint(method->time * 15.0, (method->uv.u - method->SolutionU(method->time))* 10000));
+        gosaV.addVertex(ofPoint(method->time * 15.0, (method->uv.v - method->SolutionV(method->time))* 10000));
         
         //--------
         //Runge
@@ -71,7 +74,7 @@ void Kadai3_2::setup(){
     gosaU.setMode(OF_PRIMITIVE_POINTS);
     gosaV.setMode(OF_PRIMITIVE_POINTS);
     method->reset();
-    */
+    
     //-----------------------------------
     //kadai3.2.2
     //----------------------------------
@@ -84,8 +87,8 @@ void Kadai3_2::setup(){
         Ev = 0;
         while (method->time < 10 * M_PI / OMEGA) {
             method->update();
-            double eu = method->u - method->SolutionU(method->time);
-            double ev = method->v - method->SolutionV(method->time);
+            double eu = method->uv.u - method->SolutionU(method->time);
+            double ev = method->uv.v - method->SolutionV(method->time);
             
             if(Eu < abs(eu)) Eu = abs(eu);
             if(Ev < abs(ev)) Ev = abs(ev);
@@ -116,7 +119,7 @@ void Kadai3_2::draw(){
     //-----------------------------------
     //kadai3.2.1 UVPlot
     //----------------------------------
-    /*ofPushMatrix();
+    ofPushMatrix();
     ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
     uvtMesh.draw();
     
@@ -134,12 +137,12 @@ void Kadai3_2::draw(){
         ofLine(i * 100,-5, i * 100,5);
     }
     ofPopMatrix();
-    */
+    
     
     //-------------------
     //kadai3.2.1 Gosa
     //------------------
-    /*ofPushMatrix();
+    ofPushMatrix();
     ofTranslate(50, ofGetHeight()/2);
     ofSetColor(255, 0, 0);
     ofDrawBitmapString("GosaV", ofPoint(300,-300));
@@ -166,7 +169,7 @@ void Kadai3_2::draw(){
         ofLine(i * 15.0,-5, i * 15.0,5);
     }
     ofPopMatrix();
-    */
+    
     
     //----------------------------------
     //kadai3.2.2
