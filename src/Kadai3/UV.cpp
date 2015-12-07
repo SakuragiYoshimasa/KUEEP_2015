@@ -5,6 +5,10 @@
 //  Created by SakuragiYoshimasa on 2015/12/06.
 //
 //
+
+#ifndef UV_cpp
+#define UV_cpp
+
 #define K 3.0
 #define M 5.0
 #define OMEGA sqrt(K/M)
@@ -40,3 +44,5 @@ public:
         this->v = newUV.v;
     }
 };
+
+#endif

@@ -14,8 +14,8 @@
 //-----------------------------------
 //kadai3.2.1
 //----------------------------------
-//EulersMethod * method;
-HeunMethod * method;
+EulersMethod * method;
+//HeunMethod * method;
 //FourRungeKuttaMethod * method;
 ofMesh uvtMesh;
 ofMesh gosaU;
@@ -37,8 +37,8 @@ vector<ofPoint> saveData;
 //--------------------------------------------------------------
 void Kadai3_2::setup(){
     ofBackground(255);
-    //method = new EulersMethod();
-    method = new HeunMethod();
+    method = new EulersMethod();
+    //method = new HeunMethod();
     //method = new FourRungeKuttaMethod();
     //-----------------------------------
     //kadai3.2
@@ -52,22 +52,20 @@ void Kadai3_2::setup(){
         //--------
         //Euler
         //--------
-        //gosaU.addVertex(ofPoint(method->time * 15.0, (method->u - method->SolutionU(method->time))* 100));
-        //gosaV.addVertex(ofPoint(method->time * 15.0, (method->v - method->SolutionV(method->time))* 100));
+        gosaU.addVertex(ofPoint(method->time * 15.0, (method->uv.u - method->SolutionU(method->time))* 100));
+        gosaV.addVertex(ofPoint(method->time * 15.0, (method->uv.v - method->SolutionV(method->time))* 100));
         
         //--------
         //Heun
         //--------
-        //gosaU.addVertex(ofPoint(method->time * 15.0, (method->u - method->SolutionU(method->time))* 10000));
-        //gosaV.addVertex(ofPoint(method->time * 15.0, (method->v - method->SolutionV(method->time))* 10000));
-        gosaU.addVertex(ofPoint(method->time * 15.0, (method->uv.u - method->SolutionU(method->time))* 10000));
-        gosaV.addVertex(ofPoint(method->time * 15.0, (method->uv.v - method->SolutionV(method->time))* 10000));
+        //gosaU.addVertex(ofPoint(method->time * 15.0, (method->uv.u - method->SolutionU(method->time))* 10000));
+        //gosaV.addVertex(ofPoint(method->time * 15.0, (method->uv.v - method->SolutionV(method->time))* 10000));
         
         //--------
         //Runge
         //--------
-        //gosaU.addVertex(ofPoint(method->time * 15.0, (method->u - method->SolutionU(method->time))* 10000000));
-        //gosaV.addVertex(ofPoint(method->time * 15.0, (method->v - method->SolutionV(method->time))* 10000000));
+        gosaU.addVertex(ofPoint(method->time * 15.0, (method->uv.u - method->SolutionU(method->time))* 10000000));
+        gosaV.addVertex(ofPoint(method->time * 15.0, (method->uv.v - method->SolutionV(method->time))* 10000000));
         
     }
     uvtMesh.setMode(OF_PRIMITIVE_POINTS);

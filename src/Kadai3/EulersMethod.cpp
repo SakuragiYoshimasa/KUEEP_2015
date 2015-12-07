@@ -8,21 +8,16 @@
 
 #include "EulersMethod.h"
 
+EulersMethod::EulersMethod(){
+    this->uv.u = 1.0;
+    this->uv.v = 0.0;
+}
+
 void EulersMethod::update(){
-    double U = u + deltaT * getDU_DT();
-    double V = v + deltaT * getDV_DT();
-    u = U;
-    v = V;
+    uv = uv + uv.getDY_DT() * deltaT;
     time += deltaT;
 }
 
-double EulersMethod::getDU_DT(){
-    return this->v;
-}
-
-double EulersMethod::getDV_DT(){
-    return - (K / M) * this->u;
-}
 
 double EulersMethod::SolutionU(double t){
     return cos(OMEGA * t);
@@ -33,6 +28,6 @@ double EulersMethod::SolutionV(double t){
 
 void EulersMethod::reset(){
     time = 0;
-    v = 0;
-    u = 1.0;
+    this->uv.u = 1.0;
+    this->uv.v = 0.0;
 }
