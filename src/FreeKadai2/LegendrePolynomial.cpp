@@ -58,6 +58,7 @@ vector<double> LegendrePolynomial::getZeroPoint(int n){
     //---------------------------------------------
     //Q3
     //---------------------------------------------
+    //nPn'(x) = (2n-1)(xPn-1'(x) + Pn-1(x)) - (n-1)Pn-2'(x)
     /*for(int i = 0; i < n; i++){
         double currentX = (oneStepMinusResult.at(i) + oneStepMinusResult.at(i + 1)) / 2.0;
         for(int t = 0; t < 10; t++){
