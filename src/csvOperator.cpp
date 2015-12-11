@@ -8,7 +8,7 @@
 
 #include "csvOperator.h"
 
-void csvOperator::saveSplinePoints(string fileName, vector<ofVec3f> points){
+void csvOperator::savePoints(string fileName, vector<ofVec3f> points){
     fileName += ".csv";
     string csv = "";
     for(int i = 0; i < points.size(); i++){
@@ -20,7 +20,7 @@ void csvOperator::saveSplinePoints(string fileName, vector<ofVec3f> points){
     ofBufferToFile(fileName, buffer);
 }
 
-vector<ofVec3f> csvOperator::loadSplinePoints(string fileName){
+vector<ofVec3f> csvOperator::loadPoints(string fileName){
     fileName += ".csv";
     vector<ofVec3f> points;
     ofFile file(fileName);

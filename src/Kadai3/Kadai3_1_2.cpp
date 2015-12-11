@@ -37,7 +37,7 @@ void Kadai3_1_2::update(){
             saveData.push_back(ofPoint(i,p->uk.at(i)));
         }
     }
-    if(p->frameCounter == 100) csvOperator::saveSplinePoints("3_1_2out", saveData);
+    if(p->frameCounter == 100) csvOperator::savePoints("3_1_2out", saveData);
     p->update();
     
 }
