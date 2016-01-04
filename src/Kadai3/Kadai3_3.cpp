@@ -11,31 +11,37 @@
 LorenzAttractor * lorenz;
 ofMesh y1Points;
 ofMesh y1y2Points;
+ofEasyCam cam;
 
 //--------------------------------------------------------------
 void Kadai3_3::setup(){
-    ofBackground(255);
+    //ofBackground(255);
+    ofBackground(0);
     lorenz = new LorenzAttractor();
     y1Points.setMode(OF_PRIMITIVE_POINTS);
     y1y2Points.setMode(OF_PRIMITIVE_POINTS);
-    //lorenz->y.at(0) = 1 + 1.0 / 100;
+    lorenz->y.at(0) = 1 + 1.0 / 100;
     while (lorenz->time <= 100) {
         y1Points.addVertex(ofPoint(lorenz->time * 70.0, -lorenz->y[0] * 20.0,0));
-        y1y2Points.addVertex(ofPoint(lorenz->y.at(0) * 15.0,-lorenz->y.at(1) * 15.0));
+        y1y2Points.addVertex(ofPoint(lorenz->y.at(0) * 15.0,-lorenz->y.at(1) * 15.0,lorenz->y.at(2) * 15.0));
         y1y2Points.addColor(ofColor::fromHsb(int(lorenz->time) % 255, 255, 255));
+        lorenz->update();
+    }
+    
+    lorenz->reset();
+    ofSetBackgroundAuto(false);
+}
+
+//--------------------------------------------------------------
+void Kadai3_3::update(){
+    for(int i = 0; i < 20; i++){
         lorenz->update();
     }
 }
 
 //--------------------------------------------------------------
-void Kadai3_3::update(){
-
-}
-
-
-//--------------------------------------------------------------
 void Kadai3_3::draw(){
-    
+    //cam.begin();
     ofPushMatrix();
     //---------------------
     //3.3.1-1
@@ -63,10 +69,10 @@ void Kadai3_3::draw(){
     //---------------------
     //3.3.1-2
     //---------------------
-    ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
-    y1y2Points.draw();
+    //ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
+    //y1y2Points.draw();
     
-    ofSetColor(0);
+    /*ofSetColor(0);
     ofLine(0, - ofGetHeight()/2,0,ofGetHeight()/2);
     ofLine(-ofGetWidth()/2, 0, ofGetWidth()/2, 0);
     ofDrawBitmapString("Y2", ofPoint(30,-220));
@@ -79,6 +85,16 @@ void Kadai3_3::draw(){
     for(float p = -25; p <= 25; p+=5){
         ofDrawBitmapString(ofToString(p), ofPoint(p * 15.0,-10));
         ofLine(p * 15.0,-5, p * 15.0,5);
-    }
+    }*/
     ofPopMatrix();
+    
+    //ofSetColor(ofColor::fromHsb(int(ofGetElapsedTimef()) % 255, 255, 255), 100);
+    //ofDrawSphere(ofPoint(lorenz->y.at(0) * 5, lorenz->y.at(1) * 5,lorenz->y.at(2)) * 5, 10);
+    
+    //cam.end();
+}
+
+void Kadai3_3::keyPressed(int key){
+
+    ofClear(0);
 }

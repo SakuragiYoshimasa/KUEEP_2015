@@ -36,7 +36,7 @@ vector<double> LegendrePolynomial::getZeroPoint(int n){
     //---------------------------------------------
     //Q2
     //---------------------------------------------
-    /*for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++){
         double minRangeX = oneStepMinusResult.at(i);
         double maxRangeX = oneStepMinusResult.at(i+1);
         double a = minRangeX;
@@ -51,7 +51,7 @@ vector<double> LegendrePolynomial::getZeroPoint(int n){
             }
         }
         result.push_back(c);
-    }*/
+    }
     
 
     
@@ -70,9 +70,10 @@ vector<double> LegendrePolynomial::getZeroPoint(int n){
     
 
 
-    cout << "ZeroPoint:" << n << endl;
+    cout << "ZeroPoint: n = " << n << endl;
     for(int i = 0; i < result.size(); i++){
-        cout <<  result.at(i) << endl;
+        cout <<  result.at(i) << ", ";
     }
+    cout << endl;
     return result;
 }

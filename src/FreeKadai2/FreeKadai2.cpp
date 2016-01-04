@@ -21,7 +21,7 @@ void FreeKadai2::setup(){
     ofBackground(255);
     q1Mesh.setMode(OF_PRIMITIVE_LINE_STRIP);
     for(double x = -1.0; x <= 1.0; x += 0.001){
-        q1Mesh.addVertex(ofPoint(x * 400, LegendrePolynomial::getValue(2, x) * 400));
+        q1Mesh.addVertex(ofPoint(x * 400, LegendrePolynomial::getValue(10, x) * 400));
     }
     glPointSize(6.0);
     
