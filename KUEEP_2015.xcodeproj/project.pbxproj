@@ -31,7 +31,7 @@
 		FA30466F1C12CDBC00240587 /* LorenzAttractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046671C12CDBC00240587 /* LorenzAttractor.cpp */; };
 		FA3046701C12CDBC00240587 /* PropagationOfPulse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046691C12CDBC00240587 /* PropagationOfPulse.cpp */; };
 		FA4723951C129A0300C740AE /* csvOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4723931C129A0300C740AE /* csvOperator.cpp */; };
-		FA8241DF1C3A8D1000049AE7 /* Kadai4_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA8241DD1C3A8D1000049AE7 /* Kadai4_1.cpp */; };
+		FA8241E21C3A9DE000049AE7 /* Kadai4_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA8241E01C3A9DE000049AE7 /* Kadai4_2.cpp */; };
 		FA9176B81C14168500A81708 /* UV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9176B71C14168500A81708 /* UV.cpp */; };
 		FAF03E071C1A7F0300CCB6AE /* LegendrePolynomial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF03E051C1A7F0300CCB6AE /* LegendrePolynomial.cpp */; };
 /* End PBXBuildFile section */
@@ -110,6 +110,8 @@
 		FA4723941C129A0300C740AE /* csvOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csvOperator.h; sourceTree = "<group>"; };
 		FA8241DD1C3A8D1000049AE7 /* Kadai4_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kadai4_1.cpp; sourceTree = "<group>"; };
 		FA8241DE1C3A8D1000049AE7 /* Kadai4_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kadai4_1.h; sourceTree = "<group>"; };
+		FA8241E01C3A9DE000049AE7 /* Kadai4_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kadai4_2.cpp; sourceTree = "<group>"; };
+		FA8241E11C3A9DE000049AE7 /* Kadai4_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kadai4_2.h; sourceTree = "<group>"; };
 		FA9176B71C14168500A81708 /* UV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UV.cpp; sourceTree = "<group>"; };
 		FABF31DB1C101F0E009F0BC1 /* Includer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Includer.h; sourceTree = "<group>"; };
 		FAF03E021C1A7EA200CCB6AE /* FreeKadai2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FreeKadai2.cpp; sourceTree = "<group>"; };
@@ -266,6 +268,8 @@
 			children = (
 				FA8241DD1C3A8D1000049AE7 /* Kadai4_1.cpp */,
 				FA8241DE1C3A8D1000049AE7 /* Kadai4_1.h */,
+				FA8241E01C3A9DE000049AE7 /* Kadai4_2.cpp */,
+				FA8241E11C3A9DE000049AE7 /* Kadai4_2.h */,
 			);
 			path = Kadai4;
 			sourceTree = "<group>";
@@ -380,11 +384,11 @@
 				FA9176B81C14168500A81708 /* UV.cpp in Sources */,
 				FA30466B1C12CDBC00240587 /* EulersMethod.cpp in Sources */,
 				FA30466D1C12CDBC00240587 /* HeunMethod.cpp in Sources */,
+				FA8241E21C3A9DE000049AE7 /* Kadai4_2.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				FAF03E071C1A7F0300CCB6AE /* LegendrePolynomial.cpp in Sources */,
 				FA3046701C12CDBC00240587 /* PropagationOfPulse.cpp in Sources */,
 				FA4723951C129A0300C740AE /* csvOperator.cpp in Sources */,
-				FA8241DF1C3A8D1000049AE7 /* Kadai4_1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
