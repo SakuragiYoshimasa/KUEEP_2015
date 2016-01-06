@@ -30,10 +30,11 @@ void Kadai4_1::setup(){
         //標本点の生成
         for(int i = 0; i <= Ns[index]; i++){
             //4.1.1
-            samplePoints.push_back(-1.0 + 2.0 * i / double(Ns[index]));
+            //samplePoints.push_back(-1.0 + 2.0 * i / double(Ns[index]));
             
             //4.1.2
-            //samplePoints.push_back(cos((2.0 * (Ns[index] - i) + 1.0) * PI / (2.0 * Ns[index] + 2.0)));
+            cout << cos((2.0 * (Ns[index] - i) + 1.0) * PI / (2.0 * Ns[index] + 2.0) ) << endl;
+            samplePoints.push_back(cos((2.0 * (Ns[index] - i) + 1.0) * PI / (2.0 * Ns[index] + 2.0)));
         }
         
         //補間 4.1

@@ -31,7 +31,7 @@
 		FA30466F1C12CDBC00240587 /* LorenzAttractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046671C12CDBC00240587 /* LorenzAttractor.cpp */; };
 		FA3046701C12CDBC00240587 /* PropagationOfPulse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3046691C12CDBC00240587 /* PropagationOfPulse.cpp */; };
 		FA4723951C129A0300C740AE /* csvOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4723931C129A0300C740AE /* csvOperator.cpp */; };
-		FA8DEB201C3D508200B0B489 /* Kadai4_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA8241DD1C3A8D1000049AE7 /* Kadai4_1.cpp */; };
+		FA8DEB211C3D5ECD00B0B489 /* Kadai4_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA8241E01C3A9DE000049AE7 /* Kadai4_2.cpp */; };
 		FA9176B81C14168500A81708 /* UV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9176B71C14168500A81708 /* UV.cpp */; };
 		FAF03E071C1A7F0300CCB6AE /* LegendrePolynomial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF03E051C1A7F0300CCB6AE /* LegendrePolynomial.cpp */; };
 /* End PBXBuildFile section */
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA8DEB201C3D508200B0B489 /* Kadai4_1.cpp in Sources */,
+				FA8DEB211C3D5ECD00B0B489 /* Kadai4_2.cpp in Sources */,
 				FA30466F1C12CDBC00240587 /* LorenzAttractor.cpp in Sources */,
 				FA30466C1C12CDBC00240587 /* FourRungeKuttaMethod.cpp in Sources */,
 				FA9176B81C14168500A81708 /* UV.cpp in Sources */,
