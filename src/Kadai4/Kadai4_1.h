@@ -23,6 +23,6 @@ public:
     void draw();
     
     double f(double x); // -1 <= x <= 1
-    double l(int i, double x); //補間用の関数
+    double l(int i, double x, int N); //補間用の関数
     
 };

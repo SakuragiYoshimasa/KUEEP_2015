@@ -19,6 +19,6 @@ int main( ){
     //ofRunApp(new Kadai3_2());
     //ofRunApp(new Kadai3_3());
     //ofRunApp(new FreeKadai2());
-    //ofRunApp(new Kadai4_1());
-    ofRunApp(new Kadai4_2());
+    ofRunApp(new Kadai4_1());
+    //ofRunApp(new Kadai4_2());
 }
