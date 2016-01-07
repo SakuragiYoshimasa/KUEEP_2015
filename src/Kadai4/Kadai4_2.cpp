@@ -5,7 +5,7 @@
 //  Created by SakuragiYoshimasa on 2016/01/04.
 //
 //
-#define xA 0.5
+#define xA 0.0
 //#define xB 1.0
 #define xB 1.0
 #define R 40.0
@@ -24,7 +24,6 @@ double Kadai4_2::f(double x){
     //---------------------------------------------
     //定義式1 xA = 0, xB = 1, I * 4.0
     //return 1.0 / (1.0 + x * x);
-    
     //定義式2 xA = 0, xB = 1, I * 4.0
     //定義式3 xA = 0, xB = 0.5, (I - sqrt(3.0) / 8.0) * 12.0
     //定義式4 xA = 1, xB = 0.5, (I + sqrt(3.0) / 8.0) * 6.0
@@ -61,7 +60,7 @@ void Kadai4_2::setup(){
         Emesh.addVertex(ofPoint(k * R, -log2(abs(I() - result)) * R / 10.0));
         Emesh.addColor(colorSet[0]);
         T0.push_back(result); // T0にstack
-        //cout << result << "  ";
+        cout << result << "  ";
         //複合シンプソン公式
         result = 0.0;
         result += f(xA);
@@ -74,8 +73,6 @@ void Kadai4_2::setup(){
             }
         }
         result *= (xB - xA) / (double(n) * 3.0) ;
-        //cout << result << endl;
-        //cout << abs(I() - result) << "  ";
         Emesh.addVertex(ofPoint(k * R, -log2(abs(I() - result)) * R / 10.0));
         Emesh.addColor(colorSet[1]);
     }
@@ -87,12 +84,10 @@ void Kadai4_2::setup(){
         TlPlusOne.clear();
         for(int k = l; k < MAXk - 1; k++){
             double result = (double(powf(4.0, l)) * Tl[k - l + 1] - Tl[k - l]) / (double(powf(4.0, l) - 1.0));
-            //if(result <= 0) result = PI / 4.0; //オーバーフロー時の時、誤差は無視できると考える? コメントアウト
-            //cout << -log2(abs(I() - result)) << "  ";
+            cout << result << "  ";
             TlPlusOne.push_back(result);
             TlMesh.addVertex(ofPoint(k * R, -log2(abs(I() - result)) * R / 10.0));
             TlMesh.addColor(ofColor(255 - l * 15, l * 15,0));
-            //TlMesh.addColor(ofColor(0, 255,0));
         }
         cout << endl;
         TEMesh.push_back(TlMesh);
@@ -100,7 +95,7 @@ void Kadai4_2::setup(){
     }
     
     //---------------------------------------------
-    //課題4.3
+    //課題4.3 用出力
     //---------------------------------------------
     //定義式1 xA = 0, xB = 1, I * 4.0
     //定義式2 xA = 0, xB = 1, I * 4.0
